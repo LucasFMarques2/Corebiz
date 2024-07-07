@@ -1,0 +1,24 @@
+.slideItem {
+    width: 100%;
+    height: 26.9rem;
+    object-fit: cover;
+}
+
+
+@media (max-width: 1189px) {
+    .slideItem {
+        height: 12rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .slideItem {
+        height: 25rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .slideItem {
+        height: 14rem;
+    }
+}

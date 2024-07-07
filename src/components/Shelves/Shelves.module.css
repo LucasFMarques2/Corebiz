@@ -1,0 +1,141 @@
+ .shelves {
+    font-family: 'Nunito';
+    padding: 2rem 0;
+    margin: 0 auto;
+    width: 90%; 
+    max-width: 1200px;
+ } 
+
+ .shelves h2 {
+    display: block;
+    position: relative;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+ .shelves h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px; 
+    background-color: var(--gray-400); 
+    position: absolute;
+    bottom: -10px; 
+    left: 0;
+ }
+ .swiper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .swiperItems {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; 
+    height: 100%; 
+  }
+  
+  .swiperItemsInformation {
+    padding: .5rem .6rem;
+
+  }
+
+  .swiperItemsInformation:hover{
+    background-color: var(--gray-300);
+    >footer{
+        visibility: visible;
+        max-height: none;
+    }
+  }
+
+  .swiperItemsInformation footer{
+    visibility: hidden;
+  }
+
+
+  .swiperItemsInformation button{
+    margin: 1rem;
+    padding:.5rem 2rem;
+    color: var(--white);
+    background: var(--black);
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+
+    font-size: .8rem;
+  }
+
+  .swiperItems h3{
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--gray-400);
+  } 
+  
+  .swiperItems p{
+    display: block;
+    font-size: .7rem;
+    color: var(--gray-400)
+  }
+  .productImage {
+    height: 13.5rem;
+  }
+  
+  .productImageWrapper {
+    position: relative;
+  }
+  
+  .offImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5rem; 
+  }
+  
+  .starRating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .filledStar {
+    color: var(--red-300);
+    text-shadow: 0 0 1.5px var(--red-300), 0 0 1.5px var(--red-300); 
+  }
+  
+  .emptyStar {
+    color: var(--white);
+    text-shadow: 0 0 0px #000, 0 0 2px var(--red-300); 
+  }
+  
+  @media (max-width: 1189px) {
+    .productImage {
+        height: 12rem;
+    }
+}
+
+@media (max-width: 720px) {
+  .productImage {
+        height: 15rem;
+    }
+  .swiperItemsInformation  {
+    margin-bottom: 2.5rem;
+  }
+  .swiperItemsInformation footer{
+    visibility: visible;
+  }
+  .swiperItems {
+    margin-bottom: 2.5rem; 
+}
+}
+
+@media (max-width: 500px) {
+  .productImage {
+        height: 6rem;
+        width: 6rem;
+    }
+  .offImage {
+    width: 3rem; 
+  }
+}

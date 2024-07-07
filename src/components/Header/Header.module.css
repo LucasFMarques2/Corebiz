@@ -1,0 +1,184 @@
+.header{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: var(--white); 
+
+    font-family: 'Nunito';
+    font-size: .9rem;
+    width: 100%;
+}
+
+.header header > img{
+    width: 11.3rem;
+    margin-right: 3em;
+}
+
+.header > header{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+.search{
+    flex-grow: 1;
+    border-bottom: 1.4px solid var(--gray-400);
+    margin-right: 2.6em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search > input{
+    border: 0;
+    width: 100%;
+    font-family: 'Nunito';
+    font-size: .82rem;
+}
+
+.search > input:focus{
+    outline: transparent;
+}
+
+.search > button{
+    background: transparent;
+    border: none
+}
+
+.account{
+    display: flex;
+    gap: 1.3rem;
+}
+
+.account a{
+    display: flex;
+    color: var(--gray-400);
+    text-decoration: none;
+    align-items: center;
+    gap: .3rem;
+}
+
+.account a svg{
+    color: var(--black);
+}
+
+.account button{
+    display: flex;
+    align-items: center;
+    gap: .1rem;
+    
+    background: transparent;
+    border: none;
+    font-family: 'Nunito';
+}
+
+.account > button > span{
+    border: 1px solid red;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: var(--white);
+    background: var(--red-300);
+    box-sizing: content-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem; 
+    height: 1rem; 
+}
+
+
+.menuButton {
+    display: none; 
+    background: transparent;
+    border: none;
+}
+
+.mobileMenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.mobileMenu a {
+    padding: 0.5rem 0;
+    text-decoration: none;
+    color: var(--black);
+    border-bottom: 1px solid var(--gray-400);
+}
+
+
+@media(max-width: 600px) {
+    .header {
+        justify-content: start; 
+    }
+
+}
+
+@media(max-width: 1000px){
+    .header {
+        width: 100%;
+        padding: .2rem .8rem;
+    }
+
+    .header > header {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: 
+            "menu logo account"
+            "search search search";
+        width: 100%; 
+    }
+
+    .menuButton {
+        display: block;
+        grid-area: menu;
+        margin-top: .5rem;
+       
+    }
+
+    .menuButton > img{
+        width: 2rem;
+    }
+
+    .mobileMenu {
+        display: flex; 
+    }
+
+    .header header > img {
+        grid-area: logo;
+        width: 6.8rem;
+        margin-left: 2rem;
+        justify-self: center;
+    }
+
+    .account a {
+        display: none;
+    }
+
+    .account {
+        grid-area: account;
+    }
+
+    .search {
+        grid-area: search;
+        margin-top: .1rem;
+        width: 100%;
+    }
+
+    .account button{
+        gap: .1rem;
+    }
+}
+
