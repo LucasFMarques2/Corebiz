@@ -47,14 +47,41 @@
     transition: .3s;
 }
 
-.form form button:hover{
+.form form button:hover {
     transform: scale(1.1);
 }
 
-.error{
-    font-size: 1.4rem;
-    color: red;
-    margin-left: 1rem;
+.successMensage{
+    display: flex;
+    flex-direction: column;
+}
+
+.successMensage h2{
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.successMensage span{
+   color: var(--gray-400);
+   font-size: 1.2rem;
+}
+
+.successMensage button{
+    margin-top: 1rem;
+    align-self: center;
+    padding: 1.2rem 1rem;
+    border: none;
+    background: var(--black);
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    width: 30%;
+    transition: .3s;
+}
+
+.errorInput {
+    border: 2px solid red;
 }
 
 @media (max-width: 765px) {
@@ -77,6 +104,26 @@
     }
 
     .form form button {
+        width: 100%;
+    }
+
+    .successMensage{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .successMensage h2{
+        margin-bottom: 0;
+        line-height: 1;
+        font-size: 1rem;
+    }
+    
+    .successMensage span{
+       color: var(--gray-400);
+       font-size: .6rem;
+    }
+    
+    .successMensage button{
         width: 100%;
     }
 }
