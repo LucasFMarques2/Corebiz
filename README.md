@@ -55,6 +55,20 @@ Para executar a aplicação em sua máquina local, siga os seguintes passos:
 
 Desenvolvido por Lucas Freitas Marques baseado no layout do [Figman](https://www.figma.com/design/awhTJyKgrjEOqPHUrrFBv0/Corebiz---Frontend-Challenge?node-id=0-1/)
 
+##Package.json
 
+#dependencies:
+- "axios": "^1.7.2",
+- "react": "^18.3.1",
+- "react-burger-menu": "^3.0.9",
+- "react-dom": "^18.3.1",
+- "react-icons": "^5.2.1",
+- "swiper": "^11.1.4"
+
+#devDependencies:
+- "@types/react": "^18.3.3"
+- "@types/react-dom": "^18.3.0"
+- "@vitejs/plugin-react": "^4.3.1"
+- "vite": "^5.3.1"
 
 Este README inclui uma descrição do projeto, as ferramentas utilizadas, as instruções de instalação e configuração, como rodar o projeto e as versões das depedencias com o `package.json`.
