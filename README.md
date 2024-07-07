@@ -33,22 +33,18 @@ Para executar a aplicação em sua máquina local, siga os seguintes passos:
    ```bash
    git clone https://github.com/LucasFMarques2/Corebiz.git
 2. Abra a pasta Corebiz com a sua IDE de preferência (recomendado Visual Studio Code).
-
-3.Instale as dependências do projeto:
-     
-     npm install
-
-4.Instale o pacote react-icons:
-    
+3. Instale as dependências do projeto:
+   ```bash
+   npm install
+4. Instale o pacote react-icons:
+   ```bash
     npm install react-icons
-
-5.Instale o pacote swiper:
-    
-    npm install swiper
-6.Certifique-se de que o Node.js está instalado em sua máquina.
-
-7.Para iniciar a aplicação, execute o seguinte comando:
-     
+5. Instale o pacote swiper:
+    ```bash
+     npm install swiper
+6. Certifique-se de que o Node.js está instalado em sua máquina.
+7. Para iniciar a aplicação, execute o seguinte comando:
+      ```bash
      npm run dev
   
 #Estrutura do Projeto
