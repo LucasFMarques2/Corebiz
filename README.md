@@ -62,7 +62,7 @@ Desenvolvido por Lucas Freitas Marques baseado no layout do [Figman](https://www
 - "version": "0.0.1"
 - "type": "module"
 
-# "scripts":
+## scripts:
 - "dev": "vite"
 - "build": "vite build"
 - "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
