@@ -21,6 +21,8 @@ Este projeto foi realizado como parte de um desafio da Corebiz para a criação 
 - Persistência do contador em armazenamento local.
 - Formulário para inscrição em newsletter.
 
+**Obs: As inscrições do newletters ficam salvas no arquivo 'subscribers.json'**
+
 ## Deploy
 
 A aplicação está disponível em: [Corebiz E-commerce](https://corebiz-six.vercel.app/)
