@@ -55,9 +55,9 @@ Para executar a aplicação em sua máquina local, siga os seguintes passos:
 
 Desenvolvido por Lucas Freitas Marques baseado no layout do [Figman](https://www.figma.com/design/awhTJyKgrjEOqPHUrrFBv0/Corebiz---Frontend-Challenge?node-id=0-1/)
 
-##Package.json
+# Package.json
 
-#dependencies:
+## dependencies:
 - "axios": "^1.7.2",
 - "react": "^18.3.1",
 - "react-burger-menu": "^3.0.9",
@@ -65,7 +65,7 @@ Desenvolvido por Lucas Freitas Marques baseado no layout do [Figman](https://www
 - "react-icons": "^5.2.1",
 - "swiper": "^11.1.4"
 
-#devDependencies:
+## devDependencies:
 - "@types/react": "^18.3.3"
 - "@types/react-dom": "^18.3.0"
 - "@vitejs/plugin-react": "^4.3.1"
