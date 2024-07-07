@@ -57,6 +57,17 @@ Desenvolvido por Lucas Freitas Marques baseado no layout do [Figman](https://www
 
 # Package.json
 
+- name": "corebiz"
+- "private": true
+- "version": "0.0.1"
+- "type": "module"
+
+# "scripts":
+- "dev": "vite"
+- "build": "vite build"
+- "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+- "preview": "vite preview"
+
 ## dependencies:
 - "axios": "^1.7.2",
 - "react": "^18.3.1",
@@ -70,5 +81,9 @@ Desenvolvido por Lucas Freitas Marques baseado no layout do [Figman](https://www
 - "@types/react-dom": "^18.3.0"
 - "@vitejs/plugin-react": "^4.3.1"
 - "vite": "^5.3.1"
+- "eslint": "^8.57.0"
+- "eslint-plugin-react": "^7.34.2"
+- "eslint-plugin-react-hooks": "^4.6.2"
+- "eslint-plugin-react-refresh": "^0.4.7"
 
 Este README inclui uma descrição do projeto, as ferramentas utilizadas, as instruções de instalação e configuração, como rodar o projeto e as versões das depedencias com o `package.json`.
