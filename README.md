@@ -46,8 +46,12 @@ Para executar a aplicação em sua máquina local, siga os seguintes passos:
      npm install swiper
 6. Certifique-se de que o Node.js está instalado em sua máquina.
 7. Para iniciar a aplicação, execute o seguinte comando:
-      ```bash
+    ```bash
      npm run dev
+8. Para iniciar a aplicação node(backend), entre na pasta "backend-node" execute o seguinte comando:
+   ```bash
+     node index
+     
   
 #Estrutura do Projeto
 --Frontend: Localizado na pasta src, contendo componentes React, estilos e integração de API.
