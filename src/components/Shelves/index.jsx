@@ -42,7 +42,7 @@ export function Shelves(){
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const response = await axios.get('https://corebiz-backend.onrender.com/'); 
+        const response = await axios.get('https://corebiz-backend.onrender.com/api/products'); 
         setProducts(response.data);
     } catch (error) {
         console.error('Error fetching products:', error);
